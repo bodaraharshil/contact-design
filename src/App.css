@@ -1,0 +1,38 @@
+.mainners {
+  position: relative;
+  overflow: hidden;
+}
+.mainners section {
+  width: 100%;
+}
+
+.mainners section + section {
+  width: 0%;
+}
+.mainners section + section {
+  width: 100%;
+  position: absolute;
+  right: -100%;
+  text-align: revert;
+  top: 0;
+  transition: 0.5s all;
+}
+.opencontact.mainners .hiderblog {
+  opacity: 0;
+  transition: 0.3s all;
+}
+.opencontact.mainners section + section {
+  transition: 0.5s all;
+  right: -150px;
+}
+.buttonclose {
+  background: transparent;
+  border: none;
+  outline: none;
+  margin: 60px;
+  display: none;
+  cursor: pointer;
+}
+.opencontact.mainners .buttonclose {
+  display: block;
+}
